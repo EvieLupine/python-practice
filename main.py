@@ -6,6 +6,7 @@ name = input("Hello what is your name?")
 print(name, "? What a lovely name lets start")
 # Introduce the quiz and what it is about.
 print("Welcome to my quiz, I will be asking serveral questions and you just have to answer!")
+
 try: 
   tries = input("How many guesses do you want?")
   tries =int(tries)
