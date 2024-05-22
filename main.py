@@ -1,6 +1,9 @@
 
 play = "yes"
 score = 0
+GOOD_COMMENTS = ["Awesome job!","Keep it up!", "Wow, amazing!"]
+BAD_COMMENTS = ["Nearly there!","Don't give up!" "Try next time!"]
+import random
 # Ask the user their name and store it. Hello what is your name? 
 name = input("Hello what is your name?")
 print(name, "? What a lovely name lets start")
@@ -22,6 +25,7 @@ while play == "yes":
   if answer == "Cat" or answer == "cat":   
     print("Awesome! That's correct!")
     score += 1
+    print(GOOD_COMMENTS[1])
   elif answer == "":  
     print ("Not sure what you meant by that?!")
   else:     
@@ -36,17 +40,20 @@ while play == "yes":
     print ("Not sure what you meant by that?!")
   else:     
     print("Good job but that is wrong.")
+    print(BAD_COMMENTS[2])
   print("The answer is Dog!")
 
 
   answer = input("I will try make this harder now." "This animal has a long neck, eats leaves from tall trees, covered in spots and has a purple tongue." "What animal is this?")
   if answer == "Giraffe" or answer == "giraffe":   
     print("Yes good job!")
+    print(GOOD_COMMENTS[0])
     score += 1
   elif answer == "":  
     print("Sorry I don't get it.")
   else:   
     print("No sorry that isn't it.")
+    print(BAD_COMMENTS[1])
   print("The answer is Giraffe!")
 
   answer = input("This animal is powerful and has two horns on the top of it's head, it has four legs with hooves and are male but often get called by another name that starts with c and they are often said to be attracted to the colour red.")
@@ -54,11 +61,13 @@ while play == "yes":
   # Leave with a sign off. 
   if answer == "Bull" or answer == "bull":   
     print("Awesome! That's correct!")
+    print(GOOD_COMMENTS[2])
     score += 1
   elif answer == "":  
     print ("Not sure what you meant by that?!")
   else:     
     print("Good job but that is wrong.")
+    print(BAD_COMMENTS[2])
   print("The answer is Bull!")
 
   answer = input("This animal has no fur, it is scaly, not slimy and has no legs.")
@@ -69,6 +78,7 @@ while play == "yes":
     print ("Not sure what you meant by that?!")
   else:     
     print("Good job but that is wrong.")
+    print(BAD_COMMENTS[1])
   print("The answer is Snake!")
 
   answer = input("This animal is fluffy, likes to swim, is the largest rodent in the world and is native to central South America.")
