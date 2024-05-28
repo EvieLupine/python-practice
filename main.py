@@ -4,7 +4,9 @@ score = 0
 GOOD_COMMENTS = ["Awesome job!","Keep it up!", "Wow, amazing!"]
 BAD_COMMENTS = ["Nearly there!","Don't give up!" "Try next time!"]
 import random
-[["cat","dog","giraffe","bull","snake",]]
+#OPTIONS= [["cat","dog","giraffe","bull","snake","capybara","walrus","hyena","monkey","alligator","coyote","dung beetle","doe","elephant"]]
+#SHORT_OPTIONS =[0,1,2,3,4,5,6,7,8,9,10,11,12,13]
+#ANSWERS =["a","b","c","d","e","f","g","h","i","j","k" "l","m","n"]
 # Ask the user their name and store it. Hello what is your name? 
 name = input("Hello what is your name?")
 print(name, "? What a lovely name lets start")
